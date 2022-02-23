@@ -20,8 +20,12 @@ public class casualDressesSection {
 	}
 	public String gotoSection() {
 		try {
-		driver.findElement(By.linkText("DRESSES")).click();
-		driver.findElements(By.linkText("Casual Dresses")).get(0).click();
+		if(!driver.findElements(By.linkText("DRESSES")).isEmpty()) {
+			driver.findElement(By.linkText("DRESSES")).click();
+			driver.findElements(By.linkText("Casual Dresses")).get(0).click();
+		} else {
+			driver.navigate().to("http://automationpractice.com/index.php?id_category=9&controller=category");
+		}
 		return "Casual Dresses Loaded";
 		} catch (Exception e) {
 			return "Error: "+e;
@@ -31,7 +35,7 @@ public class casualDressesSection {
 		try {
 		driver.findElements(By.linkText("Add to cart")).get(0).click();
 		sleep(3000);
-		driver.findElement(By.linkText("Continue shopping")).click();		
+		driver.findElement(By.xpath("//*[text()[contains(., 'Continue shopping')]]")).click();		
 		return "1st item added to cart";
 		} catch (Exception e) {
 			return "Error: "+e;

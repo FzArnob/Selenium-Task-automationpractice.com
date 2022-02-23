@@ -85,8 +85,8 @@ public class automateTaskSteps {
 		
 		// Casual Dresses Section
 		casualDressesSection cdress = new casualDressesSection(driver);
-		System.out.println(cdress.gotoSection());
-		System.out.println(cdress.addDressToCart());
+//		System.out.println(cdress.gotoSection());
+//		System.out.println(cdress.addDressToCart());
 		
 	}
 }
