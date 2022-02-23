@@ -21,9 +21,17 @@ public class casualDressesSection {
 	public String gotoSection() {
 		try {
 		if(!driver.findElements(By.linkText("DRESSES")).isEmpty()) {
+			// works in desktop screen
 			driver.findElement(By.linkText("DRESSES")).click();
 			driver.findElements(By.linkText("Casual Dresses")).get(0).click();
+		} else if (!driver.findElements(By.className("cat-title")).isEmpty()) {
+			// works in mobile screen
+			driver.findElement(By.className("cat-title")).click();
+			sleep(2000);
+			driver.findElement(By.linkText("DRESSES")).click();
+			driver.findElements(By.linkText("CASUAL DRESSES")).get(0).click();
 		} else {
+			// alternative [if class structure changes frequently]
 			driver.navigate().to("http://automationpractice.com/index.php?id_category=9&controller=category");
 		}
 		return "Casual Dresses Loaded";
