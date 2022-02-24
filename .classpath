@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="C:/Users/fzarn/eclipse-workspace/automationTask2022/Lib/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="C:/Users/fzarn/eclipse-workspace/automationTask2022/Lib/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/fzarn/eclipse-workspace/automationTask2022/Lib/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fzarn/eclipse-workspace/automationTask2022/Lib/commons-io-2.11.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
