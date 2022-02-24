@@ -46,7 +46,7 @@ public class automateTaskSteps {
 		//  "String alias"}
 		
 		String[] userData = {
-				 "abcd32414562@gmail.com",
+				 "abcd324144562@gmail.com",
 				 "1",
 				 "John",
 				 "Kobber",
@@ -69,7 +69,7 @@ public class automateTaskSteps {
 				 "Home Address"
 				 };
 		String[] loginData = {
-				 "abcd32414562@gmail.com",
+				 "abcd324144562@gmail.com",
 				 "12345"
 		};
 		// Create user account test
@@ -85,12 +85,28 @@ public class automateTaskSteps {
 		
 		// Casual Dresses Section
 		casualDressesSection cdress = new casualDressesSection(driver);
-		System.out.println(cdress.gotoSection());
-//		System.out.println(cdress.addDressToCart());
+			// goto Casual Dresses with url
+		System.out.println(cdress.gotoSection(true));
+			// user interaction click
+		System.out.println(cdress.gotoSection(false)); // parameter <true> for checking with url
+			// add dress to cart
+		System.out.println(cdress.addDressToCart(0));
 		
 		// T-shirts Section
-		tShirtSection tshirt = new tShirtSection(driver);
-		System.out.println(tshirt.gotoSection());
+//		tShirtSection tshirt = new tShirtSection(driver);
+			// goto T-shirt with url
+//		System.out.println(tshirt.gotoSection(true));
+			// user interaction click
+				// add filter by clicking the text
+//		System.out.println(tshirt.gotoSection(false)); // parameter <true> for checking with url
+//		System.out.println(tshirt.addColorFilter("Blue"));
+				// add filter by clicking the colored box
+//		System.out.println(tshirt.gotoSection(false)); // parameter <true> for checking with url
+//		System.out.println(tshirt.addColorFilter("Blue", 14));
+			// add t-shirt to cart
+//		System.out.println(tshirt.addTShirtToCart(0));
+		
+		// Checkout Section
 		
 	}
 }

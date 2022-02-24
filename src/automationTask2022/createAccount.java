@@ -41,14 +41,17 @@ public class createAccount {
 	public String createAccountWithData(String[] data) {
 		try {
 		System.out.println("Filling up the form...");
+		if (!driver.findElements(By.linkText("Sign out")).isEmpty()) throw new Exception("A user is already logged in!");
 		driver.findElement(By.linkText("Sign in")).click();
 		sleep(1000);
 		driver.findElement(By.id("email_create")).sendKeys(data[0]);
 		sleep(2000);
 		driver.findElement(By.id("SubmitCreate")).click();
 		System.out.println("Waiting for form to be visible..");
-		sleep(4000);
-		if(driver.findElement(By.id("create_account_error")).isDisplayed()) throw new Exception("Account with this email already exists");
+		while (driver.findElements(By.id("id_gender"+data[1])).isEmpty()) {
+			if(driver.findElement(By.id("create_account_error")).isDisplayed()) throw new Exception("Account with this email already exists");
+			sleep(1000);
+		}
 		driver.findElement(By.id("id_gender"+data[1])).click();
 		driver.findElement(By.id("customer_firstname")).sendKeys(data[2]);
 		driver.findElement(By.id("customer_lastname")).sendKeys(data[3]);

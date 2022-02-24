@@ -18,33 +18,36 @@ public class casualDressesSection {
 	public casualDressesSection(WebDriver driver) {
 		this.driver = driver;
 	}
-	public String gotoSection() {
+	public String gotoSection(boolean useURL) {
 		try {
-		if(!driver.findElements(By.linkText("DRESSES")).isEmpty()) {
-			// works in desktop screen
-			driver.findElement(By.linkText("DRESSES")).click();
-			driver.findElements(By.linkText("Casual Dresses")).get(0).click();
-		} else if (!driver.findElements(By.className("cat-title")).isEmpty()) {
-			// works in mobile screen
-			driver.findElement(By.className("cat-title")).click();
-			sleep(2000);
-			driver.findElement(By.linkText("DRESSES")).click();
-			driver.findElements(By.linkText("CASUAL DRESSES")).get(0).click();
-		} else {
-			// alternative [if class structure changes frequently]
-			driver.navigate().to("http://automationpractice.com/index.php?id_category=9&controller=category");
-		}
-		return "Casual Dresses Loaded";
+			if (useURL){
+				// alternative [if class structure changes frequently]
+				driver.navigate().to("http://automationpractice.com/index.php?id_category=9&controller=category");
+				return "Casual Dresses Loaded (using url)";
+			}
+			if(!driver.findElements(By.linkText("DRESSES")).isEmpty()) {
+				// works in desktop screen
+				driver.findElement(By.linkText("DRESSES")).click();
+				driver.findElements(By.linkText("Casual Dresses")).get(0).click();
+			} else if (!driver.findElements(By.className("cat-title")).isEmpty()) {
+				// works in mobile screen
+				driver.findElement(By.className("cat-title")).click();
+				sleep(2000);
+				driver.findElement(By.linkText("DRESSES")).click();
+				driver.findElements(By.linkText("CASUAL DRESSES")).get(0).click();
+			} 
+			return "Casual Dresses Loaded";
 		} catch (Exception e) {
 			return "Error: "+e;
 		}
 	}
-	public String addDressToCart() {
+	public String addDressToCart(int item) {
 		try {
-		driver.findElements(By.linkText("Add to cart")).get(0).click();
+		driver.findElements(By.linkText("Add to cart")).get(item).click();
 		sleep(3000);
+		if(driver.findElements(By.xpath("//*[text()[contains(., 'Continue shopping')]]")).isEmpty()) throw new Exception("Adding Dress to cart failed!");
 		driver.findElement(By.xpath("//*[text()[contains(., 'Continue shopping')]]")).click();		
-		return "1st item added to cart";
+		return "No. "+(item+1)+" item(Dress) added to cart";
 		} catch (Exception e) {
 			return "Error: "+e;
 		}

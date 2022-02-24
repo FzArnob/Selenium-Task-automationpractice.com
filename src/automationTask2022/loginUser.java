@@ -21,6 +21,7 @@ public class loginUser {
 	public String loginWithData(String[] data) {
 		try {
 			System.out.println("Filling credentials...");
+			if (!driver.findElements(By.linkText("Sign out")).isEmpty()) throw new Exception("A user is already logged in!");
 			driver.findElement(By.linkText("Sign in")).click();
 			sleep(1000);
 			driver.findElement(By.id("email")).sendKeys(data[0]);
