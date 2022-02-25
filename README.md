@@ -15,6 +15,10 @@ Clone this project and name it accordingly:
 
 - Add all jars to package ClassPath from /Lib/
 - Select Driver Browser < Match driver and Installed versions >
+``// Compatibility testing with different browsers (Select one for test)\n
+	  	driver = LoadSiteInChrome();\n
+//		driver = LoadSiteInFirefox();\n
+//		driver = LoadSiteInOpera();``
 - Change dataset for each new test
 
 # Languages used:
