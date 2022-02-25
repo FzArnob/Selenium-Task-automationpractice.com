@@ -6,7 +6,7 @@ Clone this project and name it accordingly:
 ``git clone https://github.com/FzArnob/automationTask2022.git``
 
 # Getting Started
--You can directly import the project in Eclipse.
+- You can directly import the project in Eclipse.
 
 > 1. Open File->Import
 > 2. Select "Existing Projects into Workspace" from the Selection Wizard
