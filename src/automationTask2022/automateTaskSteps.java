@@ -112,7 +112,7 @@ public class automateTaskSteps {
 		// setting browser driver propertySystem.setProperty("webdriver.opera.driver", "E:\\operadriver.exe");
 		 
 		// it will open the opera browser
-		System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"/Drivers/operadriver.exe");
+		System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"/Drivers/operadriver97.exe");
 		WebDriver driver = new OperaDriver();
 		
 		// Task 1
@@ -228,7 +228,7 @@ public class automateTaskSteps {
 		//  "String alias"}
 		
 		String[] userData1 = {
-				 "johnkobber1951@gmail.com", // change the numbers in email to test new data
+				 "johnkobber1955@gmail.com", // change the numbers in email to test new data
 				 "1",
 				 "John",
 				 "Kobber",
@@ -251,12 +251,12 @@ public class automateTaskSteps {
 				 "Office Address"
 				 };
 		String[] loginData1 = {
-				 "johnkobber1951@gmail.com", // change the numbers in email to test new data
+				 "johnkobber1955@gmail.com", // change the numbers in email to test new data
 				 "12345"
 		};
 		String[] userData2 = {
-				 "penymodreguz1901@gmail.com",
-				 "1",
+				 "penymodreguz1905@gmail.com",
+				 "2",
 				 "Peny",
 				 "Modreguz",
 				 "abcde",
@@ -278,27 +278,27 @@ public class automateTaskSteps {
 				 "Office Address"
 				 };
 		String[] loginData2 = {
-				 "penymodreguz1901@gmail.com",
+				 "penymodreguz1905@gmail.com",
 				 "abcde"
 		};
 		
 		// Task 1
-		// Compatibility testing with different browsers 
+		// Compatibility testing with different browsers (Select one for test)
 //		driver = LoadSiteInChrome();
-		driver = LoadSiteInFirefox();
-//		driver = LoadSiteInOpera();
+//		driver = LoadSiteInFirefox();
+		driver = LoadSiteInOpera();
 		// Create two accounts
-//		task2(userData1);
-//		// Sign out to test new data
-//		new signoutUser(driver).signOut();
-//		
-//		task2(userData2);
-//		// Sign out to test new data
-//		new signoutUser(driver).signOut();
+		task2(userData1);
+		// Sign out to test new data
+		new signoutUser(driver).signOut();
+		
+		task2(userData2);
+		// Sign out to test new data
+		new signoutUser(driver).signOut();
 		
 		// Test Scenario for both users
 		task3to7(loginData1);
-//		task3to7(loginData2);
+		task3to7(loginData2);
 		
 		driver.quit();
 	}

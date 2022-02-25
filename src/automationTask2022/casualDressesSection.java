@@ -72,7 +72,7 @@ public class casualDressesSection {
 			WebElement ele = driver.findElement(By.className("product-container"));
 			Actions action = new Actions(driver);
 			// hover for desktop
-			action.moveToElement(ele).perform();
+			if(Integer. parseInt(driver.findElement(By.cssSelector("body")).getAttribute("offsetWidth")) >1203) action.moveToElement(ele).perform();
 			WebElement add = wait.until(
 			ExpectedConditions.visibilityOfElementLocated(By.linkText("Add to cart")));
 			add.click();

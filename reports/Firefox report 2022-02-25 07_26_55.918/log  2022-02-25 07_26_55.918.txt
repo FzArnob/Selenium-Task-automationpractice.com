@@ -1,0 +1,96 @@
+Step_1
+Pass: Account creation successful [email: johnkobber1954@gmail.com]
+
+Step_2
+Pass: Account creation successful [email: penymodreguz1904@gmail.com]
+
+Step_3
+Pass: Login successful [email: johnkobber1954@gmail.com]
+
+Step_4
+Pass: Casual Dresses Loaded
+
+Step_5
+Pass: First item(Dress) added to cart [name: Printed Dress]
+
+Step_6
+Pass: T-shirts Section Loaded
+
+Step_7
+Fail: Filter Color: Doesn't work if 'Blue' Text is clicked (waited 30 seconds)
+
+Step_8
+Pass: T-shirts Section Loaded
+
+Step_9
+Pass: Added Filter: Color Blue(using box click)
+
+Step_10
+Pass: First item(T-shirt) added to cart [name: Faded Short Sleeve T-shirts]
+
+Step_11
+Pass: Cart Loaded
+
+Step_12
+Pass: Submitted Summary
+
+Step_13
+Pass: Submitted Address
+
+Step_14
+Pass: Submitted Shipping
+
+Step_15
+Pass: Payment selected [Classname: cheque]
+
+Step_16
+Pass: Order Placed
+
+Step_17
+Pass: Sign out Success
+
+Step_18
+Pass: Login successful [email: penymodreguz1904@gmail.com]
+
+Step_19
+Pass: Casual Dresses Loaded
+
+Step_20
+Pass: First item(Dress) added to cart [name: Printed Dress]
+
+Step_21
+Pass: T-shirts Section Loaded
+
+Step_22
+Fail: Filter Color: Doesn't work if 'Blue' Text is clicked (waited 30 seconds)
+
+Step_23
+Pass: T-shirts Section Loaded
+
+Step_24
+Pass: Added Filter: Color Blue(using box click)
+
+Step_25
+Pass: First item(T-shirt) added to cart [name: Faded Short Sleeve T-shirts]
+
+Step_26
+Pass: Cart Loaded
+
+Step_27
+Pass: Submitted Summary
+
+Step_28
+Pass: Submitted Address
+
+Step_29
+Pass: Submitted Shipping
+
+Step_30
+Pass: Payment selected [Classname: cheque]
+
+Step_31
+Pass: Order Placed
+
+Step_32
+Pass: Sign out Success
+
