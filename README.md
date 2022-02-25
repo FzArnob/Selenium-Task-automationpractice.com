@@ -27,7 +27,7 @@ Clone this project and name it accordingly:
 # Conclusion
 - Full Reports and Results given for sample data
 - One Major bug caught by the automation test
-  Feature: Add Color Filter
-  Description: From Catalog, color filter doesn't work at the first attemp click by the user on Text.
-  Manually Tested: Yes, takes two attemp to add a color filter by Text
-  Comment: Color Box works fine.
+> Feature: Add Color Filter
+> Description: From Catalog, color filter doesn't work at the first attemp click by the user on Text.
+> Manually Tested: Yes, takes two attemp to add a color filter by Text
+> Comment: Color Box works fine.
