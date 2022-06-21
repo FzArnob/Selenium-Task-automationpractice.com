@@ -1,4 +1,4 @@
-# automationTask2022 - BS23
+# automationTask2022
 ## Installing
 
 Clone this project and name it accordingly:
