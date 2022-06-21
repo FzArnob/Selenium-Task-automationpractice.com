@@ -1,10 +1,10 @@
 # ``Selenium Task - automationpractice.com``
-![Output](https://github.com/FzArnob/Selenium-Task(http://automationpractice.com/)/blob/main/selenium-automationpractice.com-task.png?raw=true)
+![Output](https://github.com/FzArnob/Selenium-Task-automationpractice.com/blob/main/selenium-automationpractice.com-task.png?raw=true)
 ## Installing
 
 Clone this project and name it accordingly:
 
-``git clone https://github.com/FzArnob/automationTask2022.git``
+``git clone https://github.com/FzArnob/Selenium-Task-automationpractice.com.git``
 
 # Getting Started
 - You can directly import the project in Eclipse.
