@@ -1,4 +1,5 @@
-# automationTask2022
+# ``Selenium Task - automationpractice.com``
+![Output](https://github.com/FzArnob/Selenium-Task(http://automationpractice.com/)/blob/main/selenium-automationpractice.com-task.png?raw=true)
 ## Installing
 
 Clone this project and name it accordingly:
